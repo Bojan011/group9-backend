@@ -5,6 +5,7 @@ gem 'devise'
 
 gem 'activeadmin'
 gem 'meta_search', '>= 1.1.0.pre'
+gem 'heroku'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

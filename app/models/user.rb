@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   #     :confirmable, :token_authenticatable
   # Setup accessible (or protected) attributes for your model
   ##need to add :stats to table here
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :stats
   # attr_accessible :title, :body
   def skip_confirmation!
    self.confirmed_at = Time.now

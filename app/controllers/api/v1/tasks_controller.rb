@@ -15,7 +15,8 @@ class Api::V1::TasksController < ApplicationController
   "data":{
           "tasks":[
                     {"title":"Complete the app"},
-                    {"title":"Complete the tutorial"}
+                    {"title":"Complete the tutorial"},
+                    {"title":"Hello"}
                   ]
          }
 }'

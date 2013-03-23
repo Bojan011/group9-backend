@@ -7,7 +7,7 @@ class Api::V1::SessionsController < Devise::SessionsController
         #error =>success
         render :status => 200, :json => { :success => true, 
                                           :info => "Success" 
-                                          :data => {}}  
+                                          :data => {:auth_token => current_user.authentication_token}}  
       }  
     end  
   end  

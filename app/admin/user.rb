@@ -31,6 +31,7 @@ ActiveAdmin.register User do
       row :current_sign_in_at
       row :last_sign_in_at
       row :sign_in_count
+      row :stats
     end
     active_admin_comments
   end

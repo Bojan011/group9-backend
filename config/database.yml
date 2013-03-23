@@ -20,7 +20,7 @@ test:
 
 production:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf-8
   database: db/production.postgresql
   pool: 5
   username: group9-backend

@@ -5,12 +5,7 @@ ActiveAdmin.register User do
     column :current_sign_in_at
     column :last_sign_in_at
     column :sign_in_count
-    column :picture
-    column :attack
-    column :defend
-    column :health
-    column :experience
-    column :level
+    column :stats
     default_actions
   end
 

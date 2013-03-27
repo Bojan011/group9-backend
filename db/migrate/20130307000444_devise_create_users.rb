@@ -7,6 +7,15 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :name, :null => false, :default => ""
       t.string :email,              :null => false, :default => ""
       t.string :encrypted_password, :null => false, :default => ""
+      t.integer :health, :null => false, :default => 100
+      t.integer :attack, :null => false, :default => 5
+      t.integer :defend, :null => false, :default => 5
+      t.string :gender, :null => false, :default => ""
+      t.integer :dodge, :null => false, :default => 5
+      t.integer :experience, :null => false, :default => 0
+      t.integer :level, :null => false, :default => 1
+      t.integer :regen, :null => false, :default => 0
+      t.integer :armour, :null => false, :default => 5
       #t.integer :stats, :null => false, :default => 5
       
 

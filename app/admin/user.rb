@@ -26,7 +26,6 @@ ActiveAdmin.register User do
       row :name
       row :email
       row :authentication_token
-      row :confirmed_at
       row :current_sign_in_at
       row :last_sign_in_at
       row :sign_in_count

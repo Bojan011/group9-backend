@@ -14,7 +14,4 @@ class User < ActiveRecord::Base
                   :health, :attack, :defend, :gender, :dodge, :experience, :level,
                   :regen, :armour
   # attr_accessible :title, :body
-  def skip_confirmation!
-   self.confirmed_at = Time.now
-  end
 end

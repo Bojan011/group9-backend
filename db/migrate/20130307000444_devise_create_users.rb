@@ -16,6 +16,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.integer :level, :null => false, :default => 1
       t.integer :regen, :null => false, :default => 0
       t.integer :armour, :null => false, :default => 5
+      t.string :charName, :null => false, :default => :name
       #t.integer :stats, :null => false, :default => 5
       
 

@@ -12,6 +12,6 @@ class User < ActiveRecord::Base
   ##need to add :stats to table here
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me,
                   :health, :attack, :defend, :gender, :dodge, :experience, :level,
-                  :regen, :armour
+                  :regen, :armour, :charName
   # attr_accessible :title, :body
 end

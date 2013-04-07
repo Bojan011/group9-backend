@@ -14,6 +14,7 @@ ActiveAdmin.register User do
     column :level
     column :regen
     column :armour
+    column :charName
     default_actions
   end
 

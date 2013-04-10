@@ -4,7 +4,7 @@ Group9::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-
+  resources 'users', only: [:index]
   devise_for :users, :controllers => { :sessions => "api/v1/sessions" }
   namespace :api do
     namespace :v1 do

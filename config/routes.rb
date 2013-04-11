@@ -1,6 +1,6 @@
 Group9::Application.routes.draw do
   #devise_for :admin_users, ActiveAdmin::Devise.config
-
+  #add resources for user
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config

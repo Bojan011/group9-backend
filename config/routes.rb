@@ -1,4 +1,10 @@
 Group9::Application.routes.draw do
+  get "mailboxs/inbox"
+
+  get "mailboxs/sent"
+
+  get "mailboxs/trash"
+
   #devise_for :admin_users, ActiveAdmin::Devise.config
   #add resources for user
   ActiveAdmin.routes(self)

@@ -5,6 +5,7 @@ Group9::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   resources 'users', only: [:index]
+  match "/battle/:attacker/:defender"=> "battle#calculate"
   devise_for :users, :controllers => { :sessions => "api/v1/sessions" }
   namespace :api do
     namespace :v1 do

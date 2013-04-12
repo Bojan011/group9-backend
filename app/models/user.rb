@@ -14,4 +14,16 @@ class User < ActiveRecord::Base
                   :health, :attack, :defend, :gender, :dodge, :experience, :level,
                   :regen, :armour, :charName
   # attr_accessible :title, :body
+
+  include Mailboxer::Models::Messageable
+  acts_as_messageable
+  def name
+    self.to_s
+  end
+  def mailboxer_email(message)
+    email
+  end
+  def to_s
+    email
+  end
 end

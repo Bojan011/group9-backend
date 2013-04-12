@@ -1,10 +1,16 @@
 Group9::Application.routes.draw do
+  
   get "mailboxs/inbox"
-
   get "mailboxs/sent"
-
   get "mailboxs/trash"
 
+  resources :conversations, only: [:index, :show, :new, :create] do
+    member do
+      post :reply
+      post :trash
+      post :untrash
+    end
+  end
   #devise_for :admin_users, ActiveAdmin::Devise.config
   #add resources for user
   ActiveAdmin.routes(self)

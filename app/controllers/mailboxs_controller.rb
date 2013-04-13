@@ -2,7 +2,7 @@ class MailboxsController < ApplicationController
   def inbox
     @mail_box = current_user.mailbox.inbox
     inbox = @mail_box.map do |mail|
-    	{:id=>mail.id, created_at: mail.created_at, is_unread: is_unread? mail.receipts, sender: mail.last_message.sender.name}
+    	{:id=>mail.id, :created_at => mail.created_at, :is_unread=> is_unread? mail.receipts, :sender=> mail.last_message.sender.name}
     end
     json = inbox.to_json 
     if @mail_box
@@ -19,7 +19,7 @@ class MailboxsController < ApplicationController
   def sent
     @mail_box = current_user.mailbox.sentbox
     sentbox = @mail_box.map do |mail|
-    	{:id=>mail.id, created_at: mail.created_at, is_unread: is_unread? mail.receipts, sender: mail.last_message.sender.name}
+    	{:id=>mail.id, :created_at => mail.created_at, :is_unread=> is_unread? mail.receipts, :sender=> mail.last_message.sender.name}
     end
     json = sentbox.to_json 
     if @mail_box
@@ -36,7 +36,7 @@ class MailboxsController < ApplicationController
   def trash
     @mail_box = current_user.mailbox.trash
     trashbox = @mail_box.map do |mail|
-    	{:id=>mail.id, created_at: mail.created_at, is_unread: is_unread? mail.receipts, sender: mail.last_message.sender.name}
+    	{:id=>mail.id, :created_at => mail.created_at, :is_unread=> is_unread? mail.receipts, :sender=> mail.last_message.sender.name}
     end
     json = trashbox.to_json 
     if @mail_box

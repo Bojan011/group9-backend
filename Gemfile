@@ -10,15 +10,11 @@ gem 'rails-erd'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
-#gem 'pg'
-
-group :production do
-  gem "pg"
-end
+gem 'pg'
 
 group :development, :test do
-  gem "sqlite3"
+  gem 'annotate', ">=2.5.0"
+  gem 'debugger'
 end
 # Gems used only for assets and not required
 # in production environments by default.

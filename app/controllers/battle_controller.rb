@@ -49,13 +49,13 @@ class BattleController < ApplicationController
 		user.experience = user.experience.to_i + 1
 		user.xp = user.xp.to_i + 35
 		level = Level.where("xp <= #{user.xp}").limit(1).order("xp desc").pluck("name")
-		user.level = level[0]
+		user.level = 1level[0]
 		user.save
 		user
 	end
 	def lose_player(user,winner_strength)
 		user.experience = user.experience.to_i + 1
-		damage = winner_strength + (rand(10..100)%5)
+		damage = winner_strength + [0,1,2,3,4].sample
 		user.health = user.health.to_i - damage
 		if user.health.to_i > 0
 			user.xp = user.xp.to_i + 10

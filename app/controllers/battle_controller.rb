@@ -10,7 +10,7 @@ class BattleController < ApplicationController
 				5.times do
 
 					# playing game and result will be 0(loose) or 1(win)
-					play_result = rand(10..100)%2
+					play_result = [0,1].sample
 					puts "RESULT : #{play_result}"
 					# if won
 					if play_result == 1

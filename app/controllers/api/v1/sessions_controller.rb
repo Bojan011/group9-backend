@@ -8,7 +8,8 @@ class Api::V1::SessionsController < Devise::SessionsController
       format.json {
         warden.authenticate!(:scope => :user, :recall => "sessions#new")
         #error =>success
-        render :status => 200, :json => {:success => true,
+        render :status => 200, 
+               :json => {:success => true,
                       :info => "Logged in",
                       :data => { :id => current_user.id, :auth_token => current_user.authentication_token } }
       }

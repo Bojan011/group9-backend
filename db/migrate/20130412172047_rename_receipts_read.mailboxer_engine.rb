@@ -1,5 +1,6 @@
 # This migration comes from mailboxer_engine (originally 20120813110712)
 class RenameReceiptsRead < ActiveRecord::Migration
+  #rename mailbox
   def up
     rename_column :receipts, :read, :is_read
   end

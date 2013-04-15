@@ -1,3 +1,4 @@
+#for talking between players
 class ConversationsController < ApplicationController
 	def create
     current_user = User.find_by_authentication_token(params[:token])

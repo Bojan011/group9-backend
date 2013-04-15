@@ -1,5 +1,5 @@
 Group9::Application.routes.draw do
-  
+  #mailbox stuff
   get "mailboxs/inbox"
   get "mailboxs/sent"
   get "mailboxs/trash"

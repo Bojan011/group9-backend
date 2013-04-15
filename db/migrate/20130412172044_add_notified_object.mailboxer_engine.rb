@@ -1,5 +1,6 @@
 # This migration comes from mailboxer_engine (originally 20110719110700)
 class AddNotifiedObject < ActiveRecord::Migration
+  #notification
   def self.up
     change_table :notifications do |t|
       t.references :notified_object, :polymorphic => true

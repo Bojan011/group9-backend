@@ -9,7 +9,7 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-
+#Level model
 class Level < ActiveRecord::Base
   attr_accessible :name,:xp, :health
 

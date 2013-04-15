@@ -1,5 +1,6 @@
 # This migration comes from mailboxer_engine (originally 20111204163911)
 class AddAttachments < ActiveRecord::Migration
+	#mailbox attachment
   def self.up
     add_column :notifications, :attachment, :string
   end

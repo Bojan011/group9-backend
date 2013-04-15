@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
+#create stats
 # - Level 1 (Base points, see Sec. ): Starting out
 # - Level 2 (+10 HP, +2 STR, +2 RGN, +6 Pts):  After 75 XP
 # - Level 3 (+15 HP, +3 STR, +2 RGN, +7 Pts):  After 200 XP

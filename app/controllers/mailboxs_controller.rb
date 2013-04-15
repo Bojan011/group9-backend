@@ -1,5 +1,5 @@
 class MailboxsController < ApplicationController	
-
+	#controller for private messaging
   def inbox
   	current_user = User.find_by_authentication_token(params[:token])
     @mail_box = current_user.mailbox.inbox if current_user.present?

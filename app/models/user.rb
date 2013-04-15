@@ -31,7 +31,7 @@
 #  aim                    :integer          default(5)
 #  xp                     :integer          default(0)
 #
-
+# User model
 class User < ActiveRecord::Base
   before_save :ensure_authentication_token
   # Include default devise modules. Others available are:

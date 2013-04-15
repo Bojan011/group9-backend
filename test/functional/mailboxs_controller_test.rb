@@ -1,5 +1,5 @@
 require 'test_helper'
-
+#test mailbox controller
 class MailboxsControllerTest < ActionController::TestCase
   test "should get inbox" do
     get :inbox

@@ -31,7 +31,7 @@
 #  aim                    :integer          default(5)
 #  xp                     :integer          default(0)
 #
-
+#Test user
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase

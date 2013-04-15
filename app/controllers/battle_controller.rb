@@ -1,4 +1,5 @@
 class BattleController < ApplicationController
+	#Battle controller
 	def calculate
 		if params[:attacker] && params[:defender]
 

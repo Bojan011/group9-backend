@@ -16,7 +16,7 @@
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
-
+#test admin user
 require 'test_helper'
 
 class AdminUserTest < ActiveSupport::TestCase

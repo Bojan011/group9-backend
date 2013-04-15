@@ -1,6 +1,6 @@
 # This migration comes from mailboxer_engine (originally 20130305144212)
 class AddGlobalNotificationSupport < ActiveRecord::Migration
-
+  #Global notification
   def change
     change_table :notifications do |t|
       t.boolean :global, default: false

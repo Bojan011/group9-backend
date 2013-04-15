@@ -8,6 +8,7 @@ gem 'meta_search', '>= 1.1.0.pre'
 gem 'heroku'
 gem 'rails-erd'
 
+#added for mailbox
 gem 'rake', '10.0.4'
 gem 'mailboxer'
 
